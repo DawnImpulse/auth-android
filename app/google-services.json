@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "88178878423",
+    "firebase_url": "https://libraries-e67a9.firebaseio.com",
+    "project_id": "libraries-e67a9",
+    "storage_bucket": "libraries-e67a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88178878423:android:63b2c1a3faa1cfae",
+        "android_client_info": {
+          "package_name": "com.dawnimpulse.authlibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88178878423-4cshfu8aftbp61rmiajsl824j5lek9ut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dawnimpulse.authlibrary",
+            "certificate_hash": "674c54fdc8e123d35a8e5f68cd31b80609402fdd"
+          }
+        },
+        {
+          "client_id": "88178878423-gphmlrgben15dcc4eo6u1a9irn5ov95s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV1tg35hf2qGwLvL07v1r63wsUoHNvKt4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88178878423-gphmlrgben15dcc4eo6u1a9irn5ov95s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
