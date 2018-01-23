@@ -12,6 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        id1.text = Test.first().toString()
+        id1.text = Test.first(this).toString()
     }
 }
