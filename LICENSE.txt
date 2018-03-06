@@ -1,4 +1,3 @@
-/*
 ISC License
 
 Copyright 2018, Saksham (DawnImpulse)
@@ -11,18 +10,3 @@ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR 
 INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
 WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
 OR PERFORMANCE OF THIS SOFTWARE.
-*/
-package com.dawnimpulse.auth.utils
-
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
-
-/**
- * Created by Saksham on 2018 03 06
- * Last Branch Update - google-auth
- * Updates :
- * Saksham - 2018 03 06 - google-auth - Initial
- */
-object Config {
-    lateinit var callback: (Any?, Any?) -> Unit
-    lateinit var googleSignInClient: GoogleSignInClient
-}

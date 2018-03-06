@@ -1,6 +1,45 @@
+/*
+ISC License
+
+Copyright 2018, Saksham (DawnImpulse)
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted,
+provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
+OR PERFORMANCE OF THIS SOFTWARE.
+*/
+
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
+ext {
+    bintrayRepo = 'android'
+    bintrayName = 'auth-android'
+
+    publishedGroupId = 'com.dawnimpulse'
+    libraryName = 'auth'
+    artifact = 'auth'
+
+    libraryDescription = 'Used for easy 3rd party login integration'
+
+    siteUrl = 'https://github.com/DawnImpulse/auth-android'
+    gitUrl = 'https://github.com/DawnImpulse/auth-android.git'
+
+    libraryVersion = '0.1.0'
+
+    developerId = 'dawnimpulse'
+    developerName = 'Saksham (Dawn Impulse)'
+    developerEmail = 'dawnimpulse@gmail.com'
+
+    licenseName = 'ISC License'
+    licenseUrl = 'https://www.isc.org/downloads/software-support-policy/isc-license/'
+    allLicenses = ["ISC"]
+}
 
 android {
     compileSdkVersion 26
@@ -32,7 +71,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //------------------Others-----------------------
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     //------------------AuthGoogle-----------------------
     api 'com.google.android.gms:play-services-auth:11.8.0'
     //------------------Firebase---------------------
@@ -44,3 +83,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'*/
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
