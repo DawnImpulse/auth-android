@@ -2,6 +2,17 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+allprojects {
+    repositories {
+        google()
+
+        // If you're using a version of Gradle lower than 4.1, you must instead use:
+        // maven {
+        //     url 'https://maven.google.com'
+        // }
+    }
+}
+
 android {
     compileSdkVersion 26
     defaultConfig {
