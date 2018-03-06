@@ -32,11 +32,11 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //------------------Others-----------------------
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    //------------------Firebase---------------------
-    api 'com.google.firebase:firebase-auth:11.8.0'
+    //------------------AuthGoogle-----------------------
     api 'com.google.android.gms:play-services-auth:11.8.0'
+    //------------------Firebase---------------------
+    //api 'com.google.android.gms:play-services-auth:11.8.0'
     //------------------Support----------------------
     implementation 'com.android.support:appcompat-v7:26.1.0'
     //-----------------------------------------------
