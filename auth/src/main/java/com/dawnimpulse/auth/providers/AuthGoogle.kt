@@ -32,9 +32,10 @@ import com.google.android.gms.tasks.Task
 
 /**
  * Created by DawnImpulse on 2018 03 06
- * Last Branch Update - google-auth
+ * Last Branch Update - v0.2.0
  * Updates :
  * DawnImpulse - 2018 03 06 - google-auth - Initial
+ * DawnImpulse - 2018 05 08 - v0.2.0 - google web auth
  */
 
 class AuthGoogle {
@@ -63,6 +64,22 @@ class AuthGoogle {
     fun signIn(callback: (Any?, Any?) -> Unit) {
         Config.callback = callback
         Config.googleSignInClient = googleSignInClient
+        (context as AppCompatActivity).startActivity(Intent(context, Inner::class.java))
+    }
+
+    /**
+     * Google SignIn with Web Auth for backend
+     * @param webAuthId
+     * @param callback
+     */
+    fun signIn(webAuthId: String, callback: (Any?, Any?) -> Unit) {
+        var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(webAuthId)
+                .requestEmail()
+                .build()
+
+        Config.callback = callback
+        Config.googleSignInClient = GoogleSignIn.getClient(context, gso)
         (context as AppCompatActivity).startActivity(Intent(context, Inner::class.java))
     }
 
