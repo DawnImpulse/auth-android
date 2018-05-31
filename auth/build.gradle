@@ -30,7 +30,7 @@ ext {
     siteUrl = 'https://github.com/DawnImpulse/auth-android'
     gitUrl = 'https://github.com/DawnImpulse/auth-android.git'
 
-    libraryVersion = '0.1.0'
+    libraryVersion = '0.2.0'
 
     developerId = 'dawnimpulse'
     developerName = 'Saksham (Dawn Impulse)'
@@ -47,8 +47,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 26
-        versionCode 1
-        versionName "0.1.0"
+        versionCode 2
+        versionName "0.2.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 

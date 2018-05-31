@@ -31,7 +31,7 @@ allprojects {
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.dawnimpulse.authlibrary"
+        applicationId "com.dawnimpulse.android.auth"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
